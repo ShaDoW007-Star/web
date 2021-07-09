@@ -1,0 +1,246 @@
+    /*-------------CSS Default--------------*/
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    /*--------------Body--------------------*/
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: aqua;
+    }
+    /*---------------Header-------------------*/
+    
+    .navbar::before {
+        content: "";
+        /* background-color: black; */
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.8;
+    }
+    
+    .logo-class {
+        display: none;
+    }
+    
+    .logo {
+        height: 45px;
+        width: 45px;
+    }
+    
+    .logo img {
+        padding: 2px 20px;
+    }
+    
+    .navbar {
+        display: flex;
+        position: fixed;
+        height: 50px;
+        width: 100%;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    
+    .nav {
+        display: block;
+        width: 35%;
+        margin: 3px auto;
+        /* position: absolute; */
+    }
+    
+    .nav ul {
+        display: flex;
+    }
+    
+    .nav li {
+        list-style: none;
+        padding: 10px 0px;
+    }
+    
+    .nav li a {
+        /* display: block; */
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        padding: 0px 15px;
+    }
+    
+    .navbar li a:hover {
+        color: red;
+    }
+    
+    .search {
+        /* display: inline-block; */
+        position: absolute;
+        padding: 6px 10px;
+        right: 3px;
+        top: 5px;
+    }
+    
+    .bar input {
+        padding: 5px 10px;
+        border-radius: 20px;
+    }
+    
+    .bar button:hover {
+        background: greenyellow;
+        cursor: pointer;
+    }
+    
+    .bar button {
+        padding: 4px 23px;
+        border-radius: 20px;
+    }
+    /*------------Section----------------*/
+    
+    section {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    
+    .box {
+        height: 200px;
+        width: 200px;
+        margin: 5px 10px;
+        text-align: center;
+    }
+    
+    .box:hover {
+        cursor: pointer;
+    }
+    
+    .mainbox {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .hello {
+        padding-top: 65px;
+    }
+    
+    #join {
+        background-color: red;
+    }
+    
+    #out {
+        background-color: greenyellow;
+    }
+    
+    #any {
+        background-color: blue;
+    }
+    
+    section .all {
+        margin-top: 60px;
+    }
+    
+    .data {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .form form label {
+        font-size: 20px;
+    }
+    
+    .form form input {
+        margin: 10px 10px;
+        padding: 7px 2px;
+        padding-right: 30px;
+        text-align: left;
+    }
+    
+    #add1 {
+        padding-bottom: 100px;
+    }
+    
+    #submit {
+        padding: 10px 10px;
+        margin: 15px 150px;
+    }
+    
+    #submit:hover {
+        background-color: greenyellow;
+        cursor: pointer;
+    }
+    /*-------------Footer--------------*/
+    
+    footer {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        height: 50px;
+        width: 100%;
+        font-size: 35px;
+        margin-top: auto;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    /*------------Burger--------------*/
+    
+    .burger {
+        display: none;
+        cursor: pointer;
+    }
+    
+    .line {
+        width: 25px;
+        background-color: white;
+        height: 4px;
+        margin: 3px 3px;
+        border-radius: 3px;
+    }
+    /*------------Media Query----------*/
+    
+    @media only screen and (max-width: 1200px) {
+        .logo-class {
+            display: block;
+            position: fixed;
+            padding: 2px 20px;
+        }
+        .logo-class img {
+            height: 45px;
+            width: 45px;
+        }
+        .navbar {
+            flex-direction: column;
+            height: 265px;
+            transition: all 0.7s ease-in-out;
+        }
+        .nav ul {
+            flex-direction: column;
+            text-align: center;
+        }
+        .logo img {
+            padding: 0px 0px;
+        }
+        .search {
+            display: none;
+        }
+        .burger {
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 13px;
+        }
+        .h-nav {
+            height: 50px;
+        }
+        .v-class {
+            opacity: 0;
+        }
+    }

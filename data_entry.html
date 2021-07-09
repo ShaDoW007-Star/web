@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar h-nav">
+            <div class="logo v-class">
+                <img src="Student-Male-100.png" alt="Logo" class="logo">
+            </div>
+
+            <div class="nav v-class">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/data_entry.html">Data Entry</a></li>
+                    <li><a href="/update_data.html">Update Data</a></li>
+                    <li><a href="/view.html">View Data</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <div class="bar">
+                    <input type="search" name="search" id="search" placeholder="Search Bar">
+                    <button>Go</button>
+                </div>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+        <div class="logo-class">
+            <img src="Student-Male-100.png" alt="Logo">
+        </div>
+    </header>
+
+    <section>
+        <div class="all">
+            <div class="data">
+                <h1>Data Entry</h1>
+            </div>
+            <div class="form">
+                <form action="/data_entry.html" method="POST">
+                    <label for="nm">Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="nm" placeholder="Enter Your Name" required>
+                    <br>
+                    <label for="add" id="add1">Address :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <textarea name="address" id="address" cols="23" rows="5" placeholder="Enter Your Address" required></textarea>
+                    <br>
+                    <label for="phno">Phone No. :</label>
+                    <input type="text" id="phno" placeholder="Enter Your Phone Number" required>
+                    <br>
+                    <label for="em">Email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="email" id="em" placeholder="Enter Your Email" required>
+                    <br>
+                    <label for="gen">Gender :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> Male <input type="radio" name="gen" id="mgen"> Female <input type="radio" name="gen" id="fgen">
+                    <br>
+                    <label for="gen">Hobbies :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> Playing <input type="checkbox" name="cbox" id="">Reading <input type="checkbox" name="cbox" id="">Writing<input type="checkbox" name="cbox" id="">Traveling
+                    <input type="checkbox" name="cbox" id="">
+                    <br>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <p>&copy; Copyright-2021</p>
+    </footer>
+    <script src="script.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script> -->
+</body>
+
+</html>
